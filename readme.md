@@ -1,16 +1,16 @@
-# rocambole-strip-debugger [![Build Status](https://travis-ci.org/sindresorhus/rocambole-strip-debugger.png?branch=master)](https://travis-ci.org/sindresorhus/rocambole-strip-debugger)
+# rocambole-strip-debugger [![Build Status](https://travis-ci.org/sindresorhus/rocambole-strip-debugger.svg?branch=master)](https://travis-ci.org/sindresorhus/rocambole-strip-debugger)
 
 > Strip debugger statements from a [rocambole](https://github.com/millermedeiros/rocambole) AST
 
 
 ## Install
 
-```
-npm install --save rocambole-strip-debugger
+```bash
+$ npm install --save rocambole-strip-debugger
 ```
 
 
-## Example
+## Usage
 
 ```js
 var rocambole = require('rocambole');
@@ -25,4 +25,4 @@ rocambole.moonwalk('if (true) { debugger; }', function (node) {
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
