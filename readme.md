@@ -5,7 +5,7 @@
 
 ## Install
 
-```bash
+```sh
 $ npm install --save rocambole-strip-debugger
 ```
 
@@ -25,4 +25,4 @@ rocambole.moonwalk('if (true) { debugger; }', function (node) {
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](http://sindresorhus.com)
