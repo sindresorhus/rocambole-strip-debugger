@@ -5,7 +5,7 @@
 
 ## Install
 
-```sh
+```
 $ npm install --save rocambole-strip-debugger
 ```
 
@@ -13,13 +13,13 @@ $ npm install --save rocambole-strip-debugger
 ## Usage
 
 ```js
-var rocambole = require('rocambole');
-var stripDebugger = require('rocambole-strip-debugger');
+const rocambole = require('rocambole');
+const stripDebugger = require('rocambole-strip-debugger');
 
-rocambole.moonwalk('if (true) { debugger; }', function (node) {
+rocambole.moonwalk('if (true) { debugger; }', node => {
 	stripDebugger(node);
 }).toString();
-//=> if (true) {  }
+//=> 'if (true) {  }'
 ```
 
 
