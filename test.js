@@ -1,12 +1,11 @@
-'use strict';
-var assert = require('assert');
-var rocambole = require('rocambole');
-var stripDebugger = require('./');
+import test from 'ava';
+import rocambole from 'rocambole';
+import m from '.';
 
-it('should strip debugger statements', function () {
-	var str = rocambole.moonwalk('if (true) { debugger; }', function (node) {
-		stripDebugger(node);
+test('strip debugger statements', t => {
+	const string = rocambole.moonwalk('if (true) { debugger; }', node => {
+		m(node);
 	}).toString();
 
-	assert.strictEqual(str, 'if (true) {  }');
+	t.is(string, 'if (true) {  }');
 });

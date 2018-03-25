@@ -1,7 +1,7 @@
 'use strict';
-var removeNode = require('rocambole-node-remove');
+const removeNode = require('rocambole-node-remove');
 
-module.exports = function (node) {
+module.exports = node => {
 	if (node.type === 'DebuggerStatement') {
 		removeNode(node);
 	}
